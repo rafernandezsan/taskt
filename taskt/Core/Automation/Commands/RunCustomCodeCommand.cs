@@ -71,7 +71,7 @@ namespace taskt.Core.Automation.Commands
                 scriptProc.StartInfo.FileName = result.PathToAssembly;
                 scriptProc.StartInfo.Arguments = arguments;
 
-                if (v_applyToVariableName != "")
+                if (v_applyToVariableName != "" && v_applyToVariableName != null)
                 {
                     //redirect output
                     scriptProc.StartInfo.RedirectStandardOutput = true;
@@ -83,7 +83,7 @@ namespace taskt.Core.Automation.Commands
 
                 scriptProc.WaitForExit();
 
-                if (v_applyToVariableName != "")
+                if (v_applyToVariableName != "" && v_applyToVariableName != null)
                 {
                     var output = scriptProc.StandardOutput.ReadToEnd();
                     output.StoreInUserVariable(sender, v_applyToVariableName);
