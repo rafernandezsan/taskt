@@ -70,12 +70,14 @@ namespace taskt.Core.Automation.Commands
                 System.Diagnostics.Process scriptProc = new System.Diagnostics.Process();
                 scriptProc.StartInfo.FileName = result.PathToAssembly;
                 scriptProc.StartInfo.Arguments = arguments;
+                
 
                 if (v_applyToVariableName != "" && v_applyToVariableName != null)
                 {
                     //redirect output
                     scriptProc.StartInfo.RedirectStandardOutput = true;
                     scriptProc.StartInfo.UseShellExecute = false;
+                    scriptProc.StartInfo.CreateNoWindow = true; // do not show any window.
                 }
              
 

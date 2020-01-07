@@ -305,6 +305,7 @@
     <Compile Include="Core\Automation\Commands\VariableCommand.cs" />
     <Compile Include="Core\Automation\Commands\WaitForFileToExistCommand.cs" />
     <Compile Include="Core\Automation\Commands\WriteTextFileCommand.cs" />
+    <Compile Include="Core\CustomCodeViewer.cs" />
     <Compile Include="Core\DocumentationGeneration.cs" />
     <Compile Include="Core\EncryptionServices.cs" />
     <Compile Include="Core\GlobalAppInstances.cs" />

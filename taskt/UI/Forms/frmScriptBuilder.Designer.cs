@@ -111,8 +111,9 @@
             this.copySelectedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteSelectedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.moveToParentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notifyTray = new System.Windows.Forms.NotifyIcon(this.components);
             this.viewCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyTray = new System.Windows.Forms.NotifyIcon(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.tlpControls.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -589,7 +590,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 30);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Welcome to taskt!";
+            this.label1.Text = "Welcome to OzenBot!";
             // 
             // lblNote
             // 
@@ -658,6 +659,7 @@
             // 
             // pnlMain
             // 
+            this.pnlMain.Controls.Add(this.label2);
             this.pnlMain.Controls.Add(this.lblMainLogo);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
@@ -679,9 +681,9 @@
             this.lblMainLogo.Location = new System.Drawing.Point(2, -1);
             this.lblMainLogo.Margin = new System.Windows.Forms.Padding(0);
             this.lblMainLogo.Name = "lblMainLogo";
-            this.lblMainLogo.Size = new System.Drawing.Size(82, 45);
+            this.lblMainLogo.Size = new System.Drawing.Size(137, 45);
             this.lblMainLogo.TabIndex = 0;
-            this.lblMainLogo.Text = "taskt";
+            this.lblMainLogo.Text = "OzenBot";
             this.lblMainLogo.Click += new System.EventHandler(this.lblMainLogo_Click);
             // 
             // lblCoordinatorInfo
@@ -776,7 +778,7 @@
             this.lblTotalResults.ForeColor = System.Drawing.Color.DimGray;
             this.lblTotalResults.Location = new System.Drawing.Point(5, 42);
             this.lblTotalResults.Name = "lblTotalResults";
-            this.lblTotalResults.Size = new System.Drawing.Size(117, 13);
+            this.lblTotalResults.Size = new System.Drawing.Size(118, 13);
             this.lblTotalResults.TabIndex = 2;
             this.lblTotalResults.Text = "X Total Results Found";
             this.lblTotalResults.Visible = false;
@@ -1119,7 +1121,7 @@
             this.moveToParentToolStripMenuItem,
             this.viewCodeToolStripMenuItem});
             this.lstContextStrip.Name = "lstContextStrip";
-            this.lstContextStrip.Size = new System.Drawing.Size(254, 218);
+            this.lstContextStrip.Size = new System.Drawing.Size(254, 196);
             // 
             // enableSelectedCodeToolStripMenuItem
             // 
@@ -1171,6 +1173,13 @@
             this.moveToParentToolStripMenuItem.Visible = false;
             this.moveToParentToolStripMenuItem.Click += new System.EventHandler(this.moveToParentToolStripMenuItem_Click);
             // 
+            // viewCodeToolStripMenuItem
+            // 
+            this.viewCodeToolStripMenuItem.Name = "viewCodeToolStripMenuItem";
+            this.viewCodeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.viewCodeToolStripMenuItem.Text = "View Code";
+            this.viewCodeToolStripMenuItem.Click += new System.EventHandler(this.viewCodeToolStripMenuItem_Click);
+            // 
             // notifyTray
             // 
             this.notifyTray.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
@@ -1181,12 +1190,19 @@
             this.notifyTray.Visible = true;
             this.notifyTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyTray_MouseDoubleClick);
             // 
-            // viewCodeToolStripMenuItem
+            // label2
             // 
-            this.viewCodeToolStripMenuItem.Name = "viewCodeToolStripMenuItem";
-            this.viewCodeToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
-            this.viewCodeToolStripMenuItem.Text = "View Code";
-            this.viewCodeToolStripMenuItem.Click += new System.EventHandler(this.viewCodeToolStripMenuItem_Click);
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 14F);
+            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label2.Location = new System.Drawing.Point(139, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Powered by taskt";
             // 
             // frmScriptBuilder
             // 
@@ -1330,6 +1346,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsSearchButton;
         private System.Windows.Forms.ToolStripMenuItem tsSearchResult;
         private System.Windows.Forms.ToolStripMenuItem viewCodeToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,25 +7,47 @@ using System.Threading.Tasks;
 
 namespace taskt.Core
 {
-    class CustomCode
+    public static class CustomCode
     {
-        static void Main(string[] args)
+        public static DateTime ReformatDate(string LongDate)
         {
 
+            char separator = ' ';
+            String[] str = LongDate.Split(separator);
 
-            System.Console.WriteLine("Number of command line parameters = {0}", args.Length);
+            int Month = GetMonthIndex(str[2]) + 1; // Se suma uno porque Enero es 0...
 
-            foreach (string s in args)
+            string fecha = str[0] + '/' + Month + '/' + str[4];
+            DateTime dateTime = Convert.ToDateTime(fecha);
+            return dateTime;
+
+        }
+
+        public static int GetMonthIndex(this string month)
+        {
+            return Array.FindIndex(CultureInfo.CurrentCulture.DateTimeFormat.MonthNames,
+                             t => t.Equals(month, StringComparison.CurrentCultureIgnoreCase));
+        }
+
+        static void CustomMain(string[] args) //Main of the custom code, it is required to change to Main
+        {
+            if (args.Length > 0)
             {
-                System.Console.WriteLine("Found Argument: " + s);
+                if (args[0] == "CALC_DATE")
+                {
+                    DateTime fecha = ReformatDate(args[1]);
+                    Console.WriteLine("{0}", fecha);
+                }
+                else
+                {
+                    Console.WriteLine("Argumento no valido.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Argumento no valido.");
             }
 
-
-            Console.WriteLine("Hi! This code was compiled on the fly from taskt!");
-
-            //Keep the console window open, remove this if you do not want the exe to block
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
 
     }

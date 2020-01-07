@@ -87,6 +87,7 @@ namespace taskt.Core.Automation.Commands
                 }
 
                 driverService = OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(driverPath);
+                driverService.HideCommandPromptWindow = true; //do not show the console when Chrome browser is created.
                 webDriver = new OpenQA.Selenium.Chrome.ChromeDriver((OpenQA.Selenium.Chrome.ChromeDriverService)driverService, options);
             }
             else
