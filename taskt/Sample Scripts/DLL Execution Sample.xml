@@ -2,22 +2,22 @@
 <Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Commands>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Testing DLL functionality" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="c9758c71-d778-4944-949d-30a6ba0db9f0" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Testing DLL functionality" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="2" PauseBeforeExeucution="false" v_Comment="This command uses sample DLL from the repo: Sample Scripts\Sample.dll" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="6c800370-c8c1-4977-a5cb-7f1b409ae1fa" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="2" PauseBeforeExeucution="false" v_Comment="This command uses sample DLL from the repo: Sample Scripts\Sample.dll" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="3" PauseBeforeExeucution="false" v_Comment="Note: To generate parameters within the command, you must first use a valid file path (not variable), valid class and valid method name from DLL" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="24ef7851-f3b5-4092-a16d-49718a8c23f8" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="3" PauseBeforeExeucution="false" v_Comment="Note: To generate parameters within the command, you must first use a valid file path (not variable), valid class and valid method name from DLL" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="VariableCommand" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="250" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vSampleDLLFilePath" v_Input="C:\Users\JASON\source\repos\ConsoleApp4\ClassLibrary1\bin\Debug\netstandard2.0\Sample.dll" />
+      <ScriptCommand xsi:type="VariableCommand" CommandID="e0cede0d-e35c-4af7-91f0-aa3d053482b2" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="250" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vSampleDLLFilePath" v_Input="C:\Users\rfernandezs\source\repos\rafernandezsan\taskt\taskt\Sample Scripts\Sample.dll" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="5" PauseBeforeExeucution="false" v_Comment="Call basic method that returns a string" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="58778539-0965-4864-94e1-1a2b4975a796" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="5" PauseBeforeExeucution="false" v_Comment="Call basic method that returns a string" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="SaySomething" v_applyToVariableName="vResult">
+      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandID="90e53ada-aaf4-43c0-806e-083228a43da8" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="SaySomething" v_applyToVariableName="vResult">
         <v_MethodParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="_x0031_0eP9o20Para48ePerTable102018.094803">
@@ -41,13 +41,13 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="The sample string returned was: [vResult]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="685de069-598f-4d98-b7d1-6d548c34cb1f" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="The sample string returned was: [vResult]" v_AutoCloseAfter="0" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="8" PauseBeforeExeucution="false" v_Comment="Call basic method that returns an integer (whole number)" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="f47decfb-e85d-48b6-bdff-03e25fee5ff2" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="8" PauseBeforeExeucution="false" v_Comment="Call basic method that returns an integer (whole number)" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="FilesProcessed" v_applyToVariableName="vResult">
+      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandID="915090b1-f9ef-48bb-9050-99bd95366263" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="FilesProcessed" v_applyToVariableName="vResult">
         <v_MethodParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0031_0eP9o20Para48ePerTable102018.094803" msdata:UseCurrentLocale="true">
@@ -70,13 +70,13 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="The sample int returned was: [vResult]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="bf959ca8-ad15-4f3e-b9f0-d622f2c61165" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="The sample int returned was: [vResult]" v_AutoCloseAfter="0" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="11" PauseBeforeExeucution="false" v_Comment="Call basic method that returns a double" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="997b8f06-23d6-4946-9fd1-30e4ce274b28" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="11" PauseBeforeExeucution="false" v_Comment="Call basic method that returns a double" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="EstimatedTimeRemaining" v_applyToVariableName="vResult">
+      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandID="358cd4e0-e6e9-4da5-9b89-8cc723a7cb0e" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="EstimatedTimeRemaining" v_applyToVariableName="vResult">
         <v_MethodParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0031_0eP9o20Para48ePerTable102018.094803" msdata:UseCurrentLocale="true">
@@ -99,13 +99,13 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="13" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="the sample double returned was: [vResult]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="6a88b5c3-8a55-440e-aa03-4cf958b11ab1" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="13" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="the sample double returned was: [vResult]" v_AutoCloseAfter="0" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="14" PauseBeforeExeucution="false" v_Comment="Call basic method that returns a decimal" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="5b62aa88-91bb-4fe8-814d-38f6902b3ca3" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="14" PauseBeforeExeucution="false" v_Comment="Call basic method that returns a decimal" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="AccountBalance" v_applyToVariableName="vResult">
+      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandID="64548ff3-7f66-4ce6-8e19-513e05a87a6d" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="AccountBalance" v_applyToVariableName="vResult">
         <v_MethodParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0031_0eP9o20Para48ePerTable102018.094803" msdata:UseCurrentLocale="true">
@@ -128,13 +128,13 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="The sample decimal returned was: [vResult]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="5e1e7ba7-e509-42be-8270-0619c159e1bc" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="The sample decimal returned was: [vResult]" v_AutoCloseAfter="0" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="17" PauseBeforeExeucution="false" v_Comment="Call complex method that returns custom class" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="b1363e99-9532-4a41-add2-a8d001c23c9b" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="17" PauseBeforeExeucution="false" v_Comment="Call complex method that returns custom class" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="18" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="ReturnComplexItem" v_applyToVariableName="vResult">
+      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandID="ae3f9128-060e-4b62-8f89-d08bc4815ae4" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="18" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="ReturnComplexItem" v_applyToVariableName="vResult">
         <v_MethodParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="_x0031_0eP9o20Para48ePerTable102018.094803" msdata:UseCurrentLocale="true">
@@ -157,25 +157,25 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="19" PauseBeforeExeucution="false" v_Comment="Show complex class values" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="01308c85-937d-4eee-94df-660c3e81535d" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="19" PauseBeforeExeucution="false" v_Comment="Show complex class values" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="20" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="The complex object returned was: [vResult]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="9b8fbf17-0b13-4126-9191-e4c7b2fbf386" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="20" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="The complex object returned was: [vResult]" v_AutoCloseAfter="0" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="21" PauseBeforeExeucution="false" v_Comment="sample for parsing complex value out" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="02d5ec76-fc4a-4b1a-b4bf-b67e9920a4c3" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="21" PauseBeforeExeucution="false" v_Comment="sample for parsing complex value out" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="22" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="Sample parsed result: [vResult =&gt; $.SomeName]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="9de2a42f-ffd1-44b9-838f-521435c6239f" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="22" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="Sample parsed result: [vResult =&gt; $.SomeName]" v_AutoCloseAfter="0" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="23" PauseBeforeExeucution="false" v_Comment="Call method that requires parameters" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="2fdb5168-82f9-4218-bd0a-91a73f4fd9b9" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="23" PauseBeforeExeucution="false" v_Comment="Call method that requires parameters" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="24" PauseBeforeExeucution="false" v_Comment="Note: Parameters are automagically converted to expected types for the DLL call" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="6f2c9ebc-815d-4411-8d1e-5ded28b1c10f" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="24" PauseBeforeExeucution="false" v_Comment="Note: Parameters are automagically converted to expected types for the DLL call" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="25" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="DoMath" v_applyToVariableName="vResult">
+      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandID="472bc212-4ca1-4d54-8289-a770d7686bfa" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="25" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="DoMath" v_applyToVariableName="vResult">
         <v_MethodParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="_x0031_0eP9o20Para48ePerTable102018.094803">
@@ -206,13 +206,13 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="26" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vResult]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="7440b483-04da-45cf-aa78-574933986124" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="26" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vResult]" v_AutoCloseAfter="0" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="27" PauseBeforeExeucution="false" v_Comment="Call method that requires boolean parameter" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="db5b3789-5435-43c8-adac-f2739e2ab824" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="27" PauseBeforeExeucution="false" v_Comment="Call method that requires boolean parameter" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="28" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="ReturnOpposite" v_applyToVariableName="vResult">
+      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandID="e41ade6e-1a80-482b-8d71-004d67bbffd3" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="28" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="ReturnOpposite" v_applyToVariableName="vResult">
         <v_MethodParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="_x0031_0eP9o20Para48ePerTable102018.094803">
@@ -243,13 +243,13 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="29" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vResult]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="2c11d20a-1d48-4884-be1a-331b76c94010" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="29" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vResult]" v_AutoCloseAfter="0" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="30" PauseBeforeExeucution="false" v_Comment="Call method that requires multiple params (in string, in string, out string)" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="ab395be9-8893-4f60-be2f-56e755c96e90" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="30" PauseBeforeExeucution="false" v_Comment="Call method that requires multiple params (in string, in string, out string)" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="31" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="ReturnAppendedString" v_applyToVariableName="vResult">
+      <ScriptCommand xsi:type="ExecuteDLLCommand" CommandID="903dd765-589b-4b4b-8fef-54c29a85ca8a" CommandName="ExecuteDLLCommand" IsCommented="false" SelectionName="Execute DLL" DefaultPause="250" LineNumber="31" PauseBeforeExeucution="false" CommandEnabled="true" v_FilePath="[vSampleDLLFilePath]" v_ClassName="tasktTesting.RobotWorker" v_MethodName="ReturnAppendedString" v_applyToVariableName="vResult">
         <v_MethodParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
             <xs:element name="_x0031_0eP9o20Para48ePerTable102018.094803">
@@ -284,7 +284,7 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="32" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vResult]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="fbef1878-0970-4517-8595-ebff401e36a7" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="32" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[vResult]" v_AutoCloseAfter="0" />
     </ScriptAction>
   </Commands>
   <Variables>
