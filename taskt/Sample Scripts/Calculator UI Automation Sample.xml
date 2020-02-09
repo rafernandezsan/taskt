@@ -2,22 +2,22 @@
 <Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Commands>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Sample performs a calculation using UI Automation command" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="c6b222d0-3a01-445a-acd6-e24000b2e143" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Sample performs a calculation using UI Automation command" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="2" PauseBeforeExeucution="false" v_Comment="Start calc.exe and activate window" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="5c8c0f95-8b73-4e86-b02e-df17d25b6c18" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="2" PauseBeforeExeucution="false" v_Comment="Start calc.exe and activate window" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="StartProcessCommand" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="250" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="calc" />
+      <ScriptCommand xsi:type="StartProcessCommand" CommandID="f5dccd0f-95ae-49c9-8d77-2f146c63696b" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="250" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="calc" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="ActivateWindowCommand" CommandName="ActivateWindowCommand" IsCommented="false" SelectionName="Activate Window" DefaultPause="250" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Calculator" />
+      <ScriptCommand xsi:type="ActivateWindowCommand" CommandID="cdea950d-0a46-4f19-bb5a-3332a95e1b96" CommandName="ActivateWindowCommand" IsCommented="false" SelectionName="Activate Window" DefaultPause="250" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Calculator" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="5" PauseBeforeExeucution="false" v_Comment="Press 8" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="ebf9637e-3988-408a-b06a-24da7a98d5b8" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="5" PauseBeforeExeucution="false" v_Comment="Press 8" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="UIAutomationCommand" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Click Element">
+      <ScriptCommand xsi:type="UIAutomationCommand" CommandID="fdfa5f85-4f04-4600-b794-b96fa0e8ba28" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Click Element">
         <v_WindowName>Calculator</v_WindowName>
         <v_UIASearchParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
@@ -579,10 +579,10 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="7" PauseBeforeExeucution="false" v_Comment="Press Multiply" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="0ca14064-8a8a-4566-a3c1-1b6c740df7db" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="7" PauseBeforeExeucution="false" v_Comment="Press Multiply" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="UIAutomationCommand" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Click Element">
+      <ScriptCommand xsi:type="UIAutomationCommand" CommandID="6d689743-0974-4f86-aaf1-e7932723f083" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Click Element">
         <v_WindowName>Calculator</v_WindowName>
         <v_UIASearchParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
@@ -1044,10 +1044,10 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="9" PauseBeforeExeucution="false" v_Comment="Press 8" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="f480cda8-7f51-4c7a-b79c-c1b6f97a1e7b" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="9" PauseBeforeExeucution="false" v_Comment="Press 8" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="UIAutomationCommand" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Click Element">
+      <ScriptCommand xsi:type="UIAutomationCommand" CommandID="688fff09-1abf-43db-8c3b-a7e0368d6e78" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Click Element">
         <v_WindowName>Calculator</v_WindowName>
         <v_UIASearchParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
@@ -1311,10 +1311,10 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="11" PauseBeforeExeucution="false" v_Comment="Press Equals" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="42fb0bdb-f965-4bdb-8413-9a756b386e43" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="11" PauseBeforeExeucution="false" v_Comment="Press Equals" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="UIAutomationCommand" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Click Element">
+      <ScriptCommand xsi:type="UIAutomationCommand" CommandID="b09f5d20-a538-4b41-9592-8d6708071ed6" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Click Element">
         <v_WindowName>Calculator</v_WindowName>
         <v_UIASearchParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
@@ -1676,10 +1676,10 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="13" PauseBeforeExeucution="false" v_Comment="Get Value from Screen" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="ea6348f6-6bb1-4439-b411-da2ceaf8548a" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="13" PauseBeforeExeucution="false" v_Comment="Get Value from Screen" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="UIAutomationCommand" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Get Value From Element">
+      <ScriptCommand xsi:type="UIAutomationCommand" CommandID="7c39427e-3d0d-4921-8a46-485a059b79b0" CommandName="UIAutomationCommand" IsCommented="false" SelectionName="UI Automation" DefaultPause="250" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" v_AutomationType="Get Value From Element">
         <v_WindowName>Calculator</v_WindowName>
         <v_UIASearchParameters>
           <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
@@ -1839,10 +1839,13 @@
       </ScriptCommand>
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="15" PauseBeforeExeucution="false" v_Comment="Show to User" CommandEnabled="true" />
+      <ScriptCommand xsi:type="CommentCommand" CommandID="0175bea2-385c-47ef-8f4e-c4395b10e69a" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="250" LineNumber="15" PauseBeforeExeucution="false" v_Comment="Show to User" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="MessageBoxCommand" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[calcValue]" v_AutoCloseAfter="0" />
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="1e4dcdd9-7a3c-4650-ad56-0bca77b5011b" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="250" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[calcValue]" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="OutlookEmailCommand" CommandID="e19fb86a-db17-4cac-af1a-ac8bbdcd065b" CommandName="OutlookEmailCommand" IsCommented="false" SelectionName="Send Outlook Email" DefaultPause="0" LineNumber="17" PauseBeforeExeucution="false" CommandEnabled="true" v_Recipients="rafael.fernandez@ozendata.com" v_Subject="Prueba" v_Body="[calcValue]" v_BodyType="HTML" />
     </ScriptAction>
   </Commands>
   <Variables>

@@ -318,6 +318,19 @@ namespace taskt.Core.Automation.Commands
                 //get required value
                 var requiredValue = requiredHandle.Current.GetType().GetRuntimeProperty(propertyName)?.GetValue(requiredHandle.Current).ToString();
 
+                if (requiredHandle.Current.LocalizedControlType == "document") 
+                {
+                    var targetTextPattern = requiredHandle.GetCurrentPattern(TextPattern.Pattern) as TextPattern;
+                    if (targetTextPattern == null) {
+                        //throw new NotImplementedException("Could not find the text");
+                    }
+                    else 
+                    {
+                       var documentRange = targetTextPattern.DocumentRange;
+                       requiredValue = documentRange.GetText(20000);    
+                    }
+                    
+                }
                 //store into variable
                 requiredValue.StoreInUserVariable(sender, applyToVariable);
 
