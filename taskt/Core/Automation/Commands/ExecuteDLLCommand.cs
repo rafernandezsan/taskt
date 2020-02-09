@@ -105,13 +105,18 @@ namespace taskt.Core.Automation.Commands
             MethodInfo[] availableMethods = t.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
 
             //get method
-            MethodInfo m = availableMethods.Where(f => f.ToString() == methodName).FirstOrDefault();
+            var m = availableMethods.Where(f => f.Name == methodName).FirstOrDefault();
 
+            if (m == null)
+                { 
+                    throw new NotImplementedException("Method not found! " + methodName);
+            }    
 
             //create instance
             var instance = requiredAssembly.CreateInstance(className);
 
             //check for parameters
+            
             var reqdParams = m.GetParameters();
 
             //handle parameters
