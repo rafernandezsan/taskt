@@ -218,6 +218,7 @@ namespace taskt.Core.Automation.Commands
             }
 
             var requiredHandle =  SearchForGUIElement(sender, variableWindowName);
+            
 
 
             //if element exists type
@@ -283,8 +284,11 @@ namespace taskt.Core.Automation.Commands
                 var yAdjustInt = int.Parse(yAdjustVariable);
 
                 //get clickable point
-                var newPoint = requiredHandle.GetClickablePoint();
 
+                //int noChildren = requiredHandle.CachedChildren.Count;
+
+                var newPoint = requiredHandle.GetClickablePoint();
+                
                 //send mousemove command
                 var newMouseMove = new SendMouseMoveCommand
                 {
@@ -318,7 +322,8 @@ namespace taskt.Core.Automation.Commands
                 //get required value
                 var requiredValue = requiredHandle.Current.GetType().GetRuntimeProperty(propertyName)?.GetValue(requiredHandle.Current).ToString();
 
-                if (requiredHandle.Current.LocalizedControlType == "document") 
+                if (requiredHandle.Current.LocalizedControlType == "document" ||
+                    requiredHandle.Current.LocalizedControlType == "documento") 
                 {
                     var targetTextPattern = requiredHandle.GetCurrentPattern(TextPattern.Pattern) as TextPattern;
                     if (targetTextPattern == null) {
@@ -327,7 +332,7 @@ namespace taskt.Core.Automation.Commands
                     else 
                     {
                        var documentRange = targetTextPattern.DocumentRange;
-                       requiredValue = documentRange.GetText(20000);    
+                       requiredValue = documentRange.GetText(200000);    
                     }
                     
                 }

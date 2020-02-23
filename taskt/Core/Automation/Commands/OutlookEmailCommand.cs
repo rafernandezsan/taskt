@@ -86,7 +86,7 @@ namespace taskt.Core.Automation.Commands
                 Microsoft.Office.Interop.Outlook.ExchangeUser manager =
                     currentUser.GetExchangeUser().GetExchangeUserManager();
                 // Add recipient using display name, alias, or smtp address
-                foreach(var t in splittext)
+                foreach (var t in splittext)
                     mail.Recipients.Add(t.ToString());
 
                 mail.Recipients.ResolveAll();
@@ -101,12 +101,35 @@ namespace taskt.Core.Automation.Commands
                 {
                     mail.Body = vBody;
                 }
- 
+
                 if (!string.IsNullOrEmpty(vAttachment))
-                   mail.Attachments.Add(vAttachment);
+                    mail.Attachments.Add(vAttachment);
 
                 mail.Send();
-                
+
+            }
+            else 
+            {
+                foreach (var t in splittext)
+                    mail.Recipients.Add(t.ToString());
+
+                mail.Recipients.ResolveAll();
+
+                mail.Subject = vSubject;
+
+                if (vBodyType == "HTML")
+                {
+                    mail.HTMLBody = vBody;
+                }
+                else
+                {
+                    mail.Body = vBody;
+                }
+
+                if (!string.IsNullOrEmpty(vAttachment))
+                    mail.Attachments.Add(vAttachment);
+
+                mail.Send();
             }
         }
       
