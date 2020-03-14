@@ -72,6 +72,7 @@
             this.uiBtnCancel.Size = new System.Drawing.Size(48, 48);
             this.uiBtnCancel.TabIndex = 15;
             this.uiBtnCancel.TabStop = false;
+            this.uiBtnCancel.Text = "Cancel";
             this.uiBtnCancel.Click += new System.EventHandler(this.uiBtnCancel_Click);
             // 
             // uiBtnOK
@@ -88,6 +89,7 @@
             this.uiBtnOK.Size = new System.Drawing.Size(48, 48);
             this.uiBtnOK.TabIndex = 14;
             this.uiBtnOK.TabStop = false;
+            this.uiBtnOK.Text = "Ok";
             this.uiBtnOK.Click += new System.EventHandler(this.uiBtnOK_Click);
             // 
             // tableLayoutPanel1
@@ -164,6 +166,7 @@
             this.uiBtnNew.Size = new System.Drawing.Size(48, 49);
             this.uiBtnNew.TabIndex = 13;
             this.uiBtnNew.TabStop = false;
+            this.uiBtnNew.Text = "Add";
             this.uiBtnNew.Click += new System.EventHandler(this.uiBtnNew_Click);
             // 
             // panel2

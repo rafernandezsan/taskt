@@ -53,7 +53,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>taskt_logo_alt.ico</ApplicationIcon>
+    <ApplicationIcon>Ozendata_logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -169,6 +169,10 @@
   <ItemGroup>
     <Compile Include="Core\ApplicationUpdate.cs" />
     <Compile Include="Core\ApplicationSettings.cs" />
+    <Compile Include="Core\Automation\Commands\AddDictionaryCommand.cs" />
+    <Compile Include="Core\Automation\Commands\BeginMutliIfCommand.cs" />
+    <Compile Include="Core\Automation\Commands\CreateDictionaryCommand.cs" />
+    <Compile Include="Core\Automation\Commands\NextLoopCommand.cs" />
     <Compile Include="Core\Automation\Commands\OutlookEmailCommand.cs" />
     <Compile Include="Core\Automation\Commands\GetRegexMatchesCommand.cs" />
     <Compile Include="Core\Automation\Commands\GetDictionaryValueCommand.cs" />
@@ -738,9 +742,14 @@
     <None Include="Resources\command-database.png" />
     <None Include="Resources\command-try.png" />
     <None Include="Resources\command-remote.png" />
+    <Content Include="Ozendata_logo.ico" />
     <Content Include="Resources\IEDriverServer.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\OzenBot Splash_taskt.png" />
+    <None Include="Resources\OzenBot Splash_taskt mid.png" />
+    <None Include="Resources\OzenBot Splash_taskt lil.png" />
+    <None Include="Resources\OzenBot Logo.png" />
     <Content Include="Resources\taskt-ExtractPDFText.jar">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

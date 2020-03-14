@@ -79,9 +79,9 @@
             this.lblMainLogo.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblMainLogo.Location = new System.Drawing.Point(1, 5);
             this.lblMainLogo.Name = "lblMainLogo";
-            this.lblMainLogo.Size = new System.Drawing.Size(253, 45);
+            this.lblMainLogo.Size = new System.Drawing.Size(285, 45);
             this.lblMainLogo.TabIndex = 4;
-            this.lblMainLogo.Text = "taskt is executing";
+            this.lblMainLogo.Text = "OzenBot is running";
             // 
             // lblKillProcNote
             // 
@@ -122,6 +122,7 @@
             this.uiBtnCancel.Size = new System.Drawing.Size(48, 48);
             this.uiBtnCancel.TabIndex = 14;
             this.uiBtnCancel.TabStop = false;
+            this.uiBtnCancel.Text = "Cancel";
             this.uiBtnCancel.Click += new System.EventHandler(this.uiBtnCancel_Click);
             // 
             // uiBtnPause
@@ -138,6 +139,7 @@
             this.uiBtnPause.Size = new System.Drawing.Size(48, 48);
             this.uiBtnPause.TabIndex = 15;
             this.uiBtnPause.TabStop = false;
+            this.uiBtnPause.Text = "Pause";
             this.uiBtnPause.Click += new System.EventHandler(this.uiBtnPause_Click);
             // 
             // pbBotIcon
