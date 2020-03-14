@@ -322,8 +322,7 @@ namespace taskt.Core.Automation.Commands
                 //get required value
                 var requiredValue = requiredHandle.Current.GetType().GetRuntimeProperty(propertyName)?.GetValue(requiredHandle.Current).ToString();
 
-                if (requiredHandle.Current.LocalizedControlType == "document" ||
-                    requiredHandle.Current.LocalizedControlType == "documento") 
+                if (requiredHandle.Current.ControlType == ControlType.Document) 
                 {
                     var targetTextPattern = requiredHandle.GetCurrentPattern(TextPattern.Pattern) as TextPattern;
                     if (targetTextPattern == null) {
