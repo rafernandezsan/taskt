@@ -643,6 +643,46 @@ namespace taskt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OzenBot_Logo {
+            get {
+                object obj = ResourceManager.GetObject("OzenBot Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OzenBot_Splash_taskt {
+            get {
+                object obj = ResourceManager.GetObject("OzenBot Splash_taskt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OzenBot_Splash_taskt_lil {
+            get {
+                object obj = ResourceManager.GetObject("OzenBot Splash_taskt lil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OzenBot_Splash_taskt_mid {
+            get {
+                object obj = ResourceManager.GetObject("OzenBot Splash_taskt mid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap recent_files {
             get {
                 object obj = ResourceManager.GetObject("recent-files", resourceCulture);

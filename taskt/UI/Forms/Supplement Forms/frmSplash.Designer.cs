@@ -36,13 +36,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::taskt.Properties.Resources.taskt_splash;
-            this.ClientSize = new System.Drawing.Size(500, 500);
+            this.BackgroundImage = global::taskt.Properties.Resources.OzenBot_Splash_taskt_lil;
+            this.ClientSize = new System.Drawing.Size(457, 447);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Welcome to taskt!";
+            this.Text = "OzenBot!";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.frmSplash_Load);

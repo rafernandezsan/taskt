@@ -244,6 +244,7 @@ namespace taskt.Core.Automation.Commands
                 }
                 else
                 {
+                    requiredHandle.SetFocus();
                     searchResult = "TRUE";
                 }
 
@@ -287,10 +288,40 @@ namespace taskt.Core.Automation.Commands
 
                 //int noChildren = requiredHandle.CachedChildren.Count;
 
-                var newPoint = requiredHandle.GetClickablePoint();
+                //var newPoint = requiredHandle.GetClickablePoint();
                 
+                //rafernandezsan
+                if (requiredHandle.Current.ControlType == ControlType.Button && requiredHandle.Current.Name != "Herramientas")
+                {
+                    var invokePattern = requiredHandle.GetCurrentPattern(InvokePattern.Pattern) as InvokePattern;
+                    //for modal windows it can takes up to 10 seconds to return. Use another thread to invoike.
+                    System.Threading.Thread invokeThread = new System.Threading.Thread(invokePattern.Invoke);
+                    invokeThread.Start();
+                    
+                    //invokePattern?.Invoke();
+                }
+                else if (requiredHandle.Current.ControlType == ControlType.TabItem)
+                {
+                    var selectItem = requiredHandle.GetCurrentPattern(SelectionItemPattern.Pattern) as SelectionItemPattern;
+                    selectItem.Select();
+                }
+                else 
+                {
+                    var newPoint = requiredHandle.GetClickablePoint();
+                    //send mousemove command
+                    var newMouseMove = new SendMouseMoveCommand
+                    {
+                        v_XMousePosition = (newPoint.X + xAdjustInt).ToString(),
+                        v_YMousePosition = (newPoint.Y + yAdjustInt).ToString(),
+                        v_MouseClick = clickType
+                    };
+
+                    //run commands
+                    newMouseMove.RunCommand(sender);
+                }
+
                 //send mousemove command
-                var newMouseMove = new SendMouseMoveCommand
+                /*var newMouseMove = new SendMouseMoveCommand
                 {
                     v_XMousePosition = (newPoint.X + xAdjustInt).ToString(),
                     v_YMousePosition = (newPoint.Y + yAdjustInt).ToString(),
@@ -298,7 +329,7 @@ namespace taskt.Core.Automation.Commands
                 };
 
                 //run commands
-                newMouseMove.RunCommand(sender);
+                newMouseMove.RunCommand(sender);*/
             }
             else if (v_AutomationType == "Get Value From Element")
             {

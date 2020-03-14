@@ -34,6 +34,7 @@
             this.lblBuildDate = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblProjectName
@@ -44,9 +45,9 @@
             this.lblProjectName.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblProjectName.Location = new System.Drawing.Point(1, 0);
             this.lblProjectName.Name = "lblProjectName";
-            this.lblProjectName.Size = new System.Drawing.Size(87, 47);
+            this.lblProjectName.Size = new System.Drawing.Size(149, 47);
             this.lblProjectName.TabIndex = 1;
-            this.lblProjectName.Text = "taskt";
+            this.lblProjectName.Text = "OzenBot";
             // 
             // lblAppVersion
             // 
@@ -54,7 +55,7 @@
             this.lblAppVersion.BackColor = System.Drawing.Color.Transparent;
             this.lblAppVersion.Font = new System.Drawing.Font("Segoe UI Semilight", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppVersion.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblAppVersion.Location = new System.Drawing.Point(3, 43);
+            this.lblAppVersion.Location = new System.Drawing.Point(156, 6);
             this.lblAppVersion.Name = "lblAppVersion";
             this.lblAppVersion.Size = new System.Drawing.Size(100, 40);
             this.lblAppVersion.TabIndex = 2;
@@ -95,11 +96,24 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "to all of the community members and projects that make this software possible.\r\n";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(5, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 19);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Powered by taskt";
+            // 
             // frmAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 221);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblProjectName);
             this.Controls.Add(this.lblAppVersion);
             this.Controls.Add(this.label2);
@@ -121,5 +135,6 @@
         private System.Windows.Forms.Label lblBuildDate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
